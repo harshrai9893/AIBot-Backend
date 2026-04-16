@@ -8,7 +8,7 @@ const chatRoutes = require("./routes/chatRoutes");
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://ai-bot-fe-mu.vercel.app",
   credentials: true
 }));
 
