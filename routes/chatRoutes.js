@@ -43,7 +43,7 @@ router.post("/chat",authMiddleware, async (req, res) => {
   }
 });
 
-router.get("/chat-history", async (req, res) => {
+router.get("/chat-history",authMiddleware, async (req, res) => {
   try {
     const userId = req.user.id;
 
